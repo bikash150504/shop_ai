@@ -1,0 +1,87 @@
+.checkout-page { padding: 2rem; }
+.checkout-page h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+.checkout-layout { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; align-items: start; }
+
+.checkout-form h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.8rem; margin-top: 1.5rem; }
+.checkout-form h3:first-child { margin-top: 0; }
+.checkout-form textarea {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  color: #e8e8f0;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+.checkout-form textarea:focus { border-color: var(--accent); outline: none; }
+
+.payment-options { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.payment-opt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.5rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.payment-opt.selected { border-color: var(--accent); color: var(--accent); background: rgba(108,92,231,0.1); }
+.payment-opt input { display: none; }
+
+.place-order-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  transition: background 0.2s;
+}
+.place-order-btn:hover:not(:disabled) { background: #7d6ef0; }
+.place-order-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.order-summary {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 90px;
+}
+.order-summary h3 { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; }
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e8e8f0;
+  border-top: 1px solid var(--border);
+  padding-top: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.success-screen {
+  text-align: center;
+  padding: 8rem 2rem;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+.success-icon { font-size: 5rem; margin-bottom: 1rem; }
+.success-screen h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.6rem; }
+.success-screen p { color: var(--muted); margin-bottom: 0.4rem; }
+
+@media (max-width: 768px) { .checkout-layout { grid-template-columns: 1fr; } }

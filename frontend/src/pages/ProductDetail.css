@@ -1,0 +1,58 @@
+.detail-page { padding: 2rem; }
+.loading-product { text-align: center; padding: 4rem; color: var(--muted); }
+.detail-layout { display: grid; grid-template-columns: 400px 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem; }
+.detail-img {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  height: 350px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 8rem;
+}
+.detail-cat { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+.detail-info h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
+.detail-rating { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
+.detail-desc { color: var(--muted); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem; }
+.detail-price-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+.detail-price { font-size: 2rem; font-weight: 800; }
+.detail-original { font-size: 1rem; color: var(--muted); text-decoration: line-through; }
+.detail-discount {
+  background: rgba(253,121,168,0.15);
+  border: 1px solid rgba(253,121,168,0.3);
+  color: var(--accent2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.detail-add-btn {
+  padding: 1rem 2.5rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.detail-add-btn:hover { background: #7d6ef0; transform: translateY(-2px); }
+
+.also-section { margin-top: 1rem; }
+.also-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+.also-grid { display: flex; gap: 1rem; flex-wrap: wrap; }
+.also-mini {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  min-width: 130px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 2rem;
+}
+.also-mini:hover { border-color: var(--accent); }
+.also-mini-name { font-size: 0.8rem; font-weight: 600; margin-top: 0.4rem; }
+.also-mini-price { font-size: 0.78rem; color: var(--accent2); margin-top: 2px; }
+
+@media (max-width: 768px) { .detail-layout { grid-template-columns: 1fr; } }

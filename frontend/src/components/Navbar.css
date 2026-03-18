@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(10,10,15,0.95);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.logo span { color: var(--accent); }
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0.6rem 1rem;
+  color: var(--text, #e8e8f0);
+  font-size: 0.9rem;
+}
+.search-bar button {
+  background: var(--accent);
+  border: none;
+  padding: 0.6rem 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.welcome { font-size: 0.85rem; color: var(--accent3); }
+
+.nav-btn {
+  padding: 0.45rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text, #e8e8f0);
+  font-size: 0.85rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-btn:hover { border-color: var(--accent); }
+.nav-btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
+
+.cart-btn {
+  padding: 0.45rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text, #e8e8f0);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.cart-badge {
+  background: var(--accent2);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
