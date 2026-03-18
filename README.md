@@ -1,4 +1,7 @@
 # 🛒 ShopAI — AI-Powered E-Commerce Platform
+--
+##img <img width="1917" height="924" alt="image" src="https://github.com/user-attachments/assets/4bbb5cb3-12ae-4335-be92-a085d7f3c2c2" />
+
 
 > Full-stack e-commerce application with AI-based recommendations, smart search, and chatbot support.
 
@@ -92,6 +95,7 @@ npm start
 | GET    | /api/products/{id}/also-bought  | People also bought           |
 
 ---
+
 
 ## 👨‍💻 Made By
 
