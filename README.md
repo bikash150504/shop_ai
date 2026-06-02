@@ -101,7 +101,7 @@ npm start
 
 ## 👨‍💻 Made By
 
-**Alok Shaw** — B.Tech Final Year  
+**Bikash Shaw** — B.Tech Final Year  
 GitHub: [your-github-username]
 
 ---
